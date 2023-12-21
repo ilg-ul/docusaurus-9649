@@ -23,3 +23,13 @@ A blog post folder can be convenient to co-locate blog post images:
 The blog supports tags as well!
 
 **And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+
+---
+
+- www. This generates a link.
+- www . This does not.
+- wwww. This does not.
+- www.some.thing. This generates a link.
+- www.some.thing . This generates a link.
+
+Apparently the `www.` combination triggers this behaviour.
