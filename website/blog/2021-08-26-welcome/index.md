@@ -27,9 +27,12 @@ The blog supports tags as well!
 ---
 
 - www. This generates a link.
+- www\. This generates a link.
 - www . This does not.
 - wwww. This does not.
+- <span>www</span>. This does not.
 - www.some.thing. This generates a link.
 - www.some.thing . This generates a link.
+- www\.some.thing. This generates a link.
 
 Apparently the `www.` combination triggers this behaviour.
