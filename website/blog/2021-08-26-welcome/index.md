@@ -31,8 +31,13 @@ The blog supports tags as well!
 - www . This does not.
 - wwww. This does not.
 - <span>www</span>. This does not.
+- www<span></span>. This does not.
+- www<!-- -->. This generates a link.
+- www&period; This generates a link.
 - www.some.thing. This generates a link.
 - www.some.thing . This generates a link.
 - www\.some.thing. This generates a link.
+- www<!-- -->.some.thing. This generates a link.
+- www&period;some.thing. This generates a link.
 
 Apparently the `www.` combination triggers this behaviour.
